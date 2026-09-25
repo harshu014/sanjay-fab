@@ -14,7 +14,7 @@ export const products = [
       "Weight Capacity": "200 kg",
       "Warranty": "1 Year"
     },
-    whatsappNumber: "919999999999"
+    whatsappNumber: "919310602295"
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const products = [
       "Dimensions": "Various Sizes",
       "Weight Capacity": "10 kg"
     },
-    whatsappNumber: "919999999999"
+    whatsappNumber: "919310602295"
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ export const products = [
       "Dimensions": "Various Sizes",
       "Weight Capacity": "30 kg"
     },
-    whatsappNumber: "919999999999"
+    whatsappNumber: "919310602295"
   },
   {
     id: 4,
@@ -65,7 +65,7 @@ export const products = [
       "Dimensions": "Various Sizes",
       "Weight Capacity": "25 kg per shelf"
     },
-    whatsappNumber: "919999999999"
+    whatsappNumber: "919310602295"
   },
   {
     id: 5,
@@ -82,7 +82,7 @@ export const products = [
       "Dimensions": "Standard Size",
       "Warranty": "6 Months"
     },
-    whatsappNumber: "919999999999"
+    whatsappNumber: "919310602295"
   },
   {
     id: 6,
@@ -99,7 +99,7 @@ export const products = [
       "Type": "Single Mines Stand",
       "Dimensions": "Standard Size"
     },
-    whatsappNumber: "919999999999"
+    whatsappNumber: "919310602295"
   },
   {
     id: 7,
@@ -116,7 +116,7 @@ export const products = [
       "Type": "Double Mines Stand",
       "Dimensions": "Large Size"
     },
-    whatsappNumber: "919999999999"
+    whatsappNumber: "919310602295"
   },
   {
     id: 8,
@@ -133,7 +133,7 @@ export const products = [
       "Type": "Triple Mines Stand",
       "Dimensions": "Extra Large Size"
     },
-    whatsappNumber: "919999999999"
+    whatsappNumber: "919310602295"
   },
   {
     id: 9,
@@ -150,7 +150,7 @@ export const products = [
       "Dimensions": "Compact Size",
       "Usage": "Storage/General"
     },
-    whatsappNumber: "919999999999"
+    whatsappNumber: "919310602295"
   },
   {
     id: 10,
@@ -167,7 +167,7 @@ export const products = [
       "Type": "Small Pyro Stand",
       "Usage": "Decorative"
     },
-    whatsappNumber: "919999999999"
+    whatsappNumber: "919310602295"
   },
   {
     id: 11,
@@ -184,7 +184,7 @@ export const products = [
       "Weight Capacity": "50 kg",
       "Usage": "Industrial/Commercial"
     },
-    whatsappNumber: "919999999999"
+    whatsappNumber: "919310602295"
   },
   {
     id: 12,
@@ -201,7 +201,7 @@ export const products = [
       "Type": "Large Pyro Stand",
       "Usage": "Decorative/Events"
     },
-    whatsappNumber: "919999999999"
+    whatsappNumber: "919310602295"
   },
   {
     id: 13,
@@ -218,6 +218,7 @@ export const products = [
       "Weight Capacity": "60 kg",
       "Usage": "Industrial/Commercial"
     },
-    whatsappNumber: "919999999999"
+    whatsappNumber: "919310602295"
   }
+  
 ];
