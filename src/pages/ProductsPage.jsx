@@ -192,14 +192,14 @@ const ProductsPage = () => {
             Our team of experts is ready to help you find the perfect metal fabrication solution for your needs.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a 
-              href="/contact" 
+            <Link 
+              to="/contact" 
               className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300"
             >
               Contact Our Team
-            </a>
+            </Link>
             <a 
-              href="https://wa.me/919999999999" 
+              href="https://wa.me/919310602295" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 flex items-center gap-2"

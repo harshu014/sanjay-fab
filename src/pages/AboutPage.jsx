@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
   const statsRef = useRef(null);
@@ -179,14 +180,14 @@ const AboutPage = () => {
             Contact us today to discuss your metal fabrication requirements. We're here to help you find the perfect solution.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a 
-              href="/contact" 
+            <Link 
+              to="/contact" 
               className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300"
             >
               Get in Touch
-            </a>
+            </Link>
             <a 
-              href="https://wa.me/919999999999" 
+              href="https://wa.me/919310602295" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 flex items-center gap-2"

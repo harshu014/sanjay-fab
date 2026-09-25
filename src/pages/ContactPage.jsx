@@ -1,7 +1,14 @@
 import { useEffect, useRef } from 'react';
 
 const ContactPage = () => {
-  const phoneNumber = "919999999999";
+  // Primary WhatsApp / Call number
+  const phoneNumber = "919310602295";
+
+  // Alternate contact numbers
+  const alternateNumbers = [
+    { display: "+91 6388052096", tel: "+916388052096" },
+    { display: "+91 8527164122", tel: "+918527164122" },
+  ];
   
   const formRef = useRef(null);
   const infoRef = useRef(null);
@@ -182,6 +189,7 @@ const ContactPage = () => {
                   </div>
                 </div>
                 
+                {/* Primary Phone */}
                 <div className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition duration-300">
                   <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
                     <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -189,8 +197,29 @@ const ContactPage = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500">Phone</p>
-                    <a href="tel:+919999999999" className="font-medium text-gray-800 hover:text-red-600 transition duration-300">+91 9999999999</a>
+                    <p className="text-sm text-gray-500">Phone (Primary)</p>
+                    <a href="tel:+919310602295" className="font-medium text-gray-800 hover:text-red-600 transition duration-300">+91 9310602295</a>
+                  </div>
+                </div>
+
+                {/* Alternate Numbers */}
+                <div className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition duration-300">
+                  <div className="flex-shrink-0 w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500">Alternate Numbers</p>
+                    {alternateNumbers.map((num, idx) => (
+                      <a 
+                        key={idx}
+                        href={`tel:${num.tel}`} 
+                        className="block font-medium text-gray-800 hover:text-red-600 transition duration-300"
+                      >
+                        {num.display}
+                      </a>
+                    ))}
                   </div>
                 </div>
                 
@@ -202,7 +231,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Email</p>
-                    <a href="mailto:info@sanjayfabricators.com" className="font-medium text-gray-800 hover:text-red-600 transition duration-300">info@sanjayfabricators.com</a>
+                    <a href="mailto:sanjayfabricators484@gmail.com" className="font-medium text-gray-800 hover:text-red-600 transition duration-300">sanjayfabricators484@gmail.com</a>
                   </div>
                 </div>
               </div>
@@ -210,7 +239,7 @@ const ContactPage = () => {
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <div className="flex flex-wrap gap-3">
                   <a 
-                    href="https://wa.me/919999999999" 
+                    href="https://wa.me/919310602295" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex-1 bg-green-600 hover:bg-green-700 text-white font-medium py-2.5 px-4 rounded-lg transition duration-300 flex items-center justify-center gap-2"
@@ -221,7 +250,7 @@ const ContactPage = () => {
                     WhatsApp
                   </a>
                   <a 
-                    href="tel:+919999999999" 
+                    href="tel:+919310602295" 
                     className="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-medium py-2.5 px-4 rounded-lg transition duration-300 flex items-center justify-center gap-2"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -245,7 +274,7 @@ const ContactPage = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a 
-              href="tel:+919999999999" 
+              href="tel:+919310602295" 
               className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300 flex items-center gap-2"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -254,7 +283,7 @@ const ContactPage = () => {
               Call Now
             </a>
             <a 
-              href="https://wa.me/919999999999" 
+              href="https://wa.me/919310602295" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 flex items-center gap-2"
